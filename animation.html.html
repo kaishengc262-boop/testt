@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Animation Works</title>
+
+<style>
+
+body{
+background:#111;
+color:white;
+font-family:Arial, Helvetica, sans-serif;
+padding:80px 10%;
+}
+
+h1{
+text-align:center;
+margin-bottom:50px;
+}
+
+/* back button */
+
+.back{
+text-align:center;
+margin-bottom:40px;
+}
+
+.back a{
+color:white;
+text-decoration:none;
+border:1px solid white;
+padding:10px 20px;
+}
+
+.back a:hover{
+background:white;
+color:black;
+}
+
+/* grid */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
+text-align:center;
+}
+
+.video img{
+width:100%;
+border-radius:6px;
+margin-bottom:10px;
+transition:0.4s;
+}
+
+.video img:hover{
+transform:scale(1.05);
+}
+
+.video a{
+color:#4da3ff;
+text-decoration:none;
+font-size:16px;
+}
+
+.video a:hover{
+text-decoration:underline;
+}
+/* video */
+
+iframe{
+width:100%;
+height:300px;
+border:none;
+border-radius:6px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Animation Works</h1>
+
+<div class="back">
+<a href="portfolio.html">← Back to Home</a>
+</div>
+
+<div class="grid">
+
+<div class="video">
+<img src="https://img.youtube.com/vi/BtfvEaumTNg/maxresdefault.jpg">
+<a href="https://youtu.be/BtfvEaumTNg" target="_blank">Watch Animation 1</a>
+</div>
+
+<div class="video">
+<img src="https://img.youtube.com/vi/b26v6-xINYk/maxresdefault.jpg">
+<a href="https://youtu.be/b26v6-xINYk" target="_blank">Watch Animation 2</a>
+</div>
+
+<div class="video">
+<img src="https://img.sanishtech.com/u/2e34c646eeb18c40ee095b265e0e5f69.png">
+<a href="https://youtu.be/7wb344qvuxU" target="_blank">Watch Animation 3</a>
+</div>
+
+<div class="video">
+<img src="https://img.youtube.com/vi/SvqzIXZnLmk/maxresdefault.jpg">
+<a href="https://youtu.be/SvqzIXZnLmk" target="_blank">Watch Animation 4</a>
+</div>
+
+</div>
+
+</body>
+</html>
+

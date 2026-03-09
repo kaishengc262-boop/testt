@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kai Shen Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+/* NAV */
+
+header{
+position:absolute;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 8%;
+z-index:10;
+}
+
+.logo{
+font-size:16px;
+letter-spacing:2px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+font-size:14px;
+opacity:0.8;
+}
+
+nav a:hover{
+opacity:1;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+height:100vh;
+}
+
+.hero-left{
+flex:1;
+background:url("cover.jpg") center/cover no-repeat;
+}
+
+.hero-right{
+flex:1;
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding:80px;
+}
+
+.hero-right h1{
+font-size:70px;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero-right p{
+color:#aaa;
+max-width:400px;
+line-height:1.6;
+}
+
+.buttons{
+margin-top:30px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+border:1px solid white;
+margin-right:15px;
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+.btn:hover{
+background:white;
+color:black;
+}
+
+/* SCROLL */
+
+.scroll-indicator{
+position:absolute;
+bottom:40px;
+left:50%;
+transform:translateX(-50%);
+font-size:14px;
+opacity:0.7;
+animation:scrollMove 1.5s infinite;
+}
+
+@keyframes scrollMove{
+0%{transform:translate(-50%,0);}
+50%{transform:translate(-50%,10px);}
+100%{transform:translate(-50%,0);}
+}
+
+/* WORK SECTION */
+
+.work-section{
+padding:120px 10%;
+background:white;
+color:black;
+text-align:center;
+}
+
+.work-section h2{
+font-size:40px;
+margin-bottom:60px;
+}
+
+/* WORK GRID */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:40px;
+}
+
+.item{
+position:relative;
+overflow:hidden;
+cursor:pointer;
+}
+
+.item img{
+width:100%;
+height:340px;
+object-fit:cover;
+transition:0.5s;
+}
+
+.item:hover img{
+transform:scale(1.1);
+}
+
+/* OVERLAY */
+
+.overlay{
+position:absolute;
+bottom:0;
+left:0;
+right:0;
+background:rgba(0,0,0,0.65);
+color:white;
+padding:20px;
+font-size:22px;
+letter-spacing:1px;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+padding:120px 10%;
+}
+
+.contact h2{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.contact p{
+color:#aaa;
+}
+
+.contact a{
+display:inline-block;
+padding:12px 30px;
+border:1px solid white;
+margin-top:25px;
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+.contact a:hover{
+background:white;
+color:black;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:40px;
+font-size:14px;
+color:#aaa;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">KAI SHEN</div>
+
+<nav>
+<a href="file:///C:/Users/HP/Downloads/portfolio/portfolio.html">Home</a>
+<a href="#work">Portfolio</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-left"></div>
+
+<div class="hero-right">
+
+<h1>My<br>Portfolio</h1>
+
+<p>
+Poster design, animation visuals and logo design.
+Minimal and modern graphic design.
+</p>
+
+<div class="buttons">
+
+<a class="btn" href="#work">Explore</a>
+
+<a class="btn" href="https://wa.me/60174769089">WhatsApp</a>
+
+</div>
+
+</div>
+
+<div class="scroll-indicator">
+
+↓ scroll
+
+</div>
+
+</section>
+
+<!-- WORK -->
+
+<section id="work" class="work-section">
+
+<h2>My Works</h2>
+
+<div class="gallery">
+
+<a href="poster.html" class="item">
+
+<img src="https://img.sanishtech.com/u/9fe719cada559fb934617ef24b03cc08.jpg">
+
+<div class="overlay">Poster</div>
+
+</a>
+
+<a href="animation.html" class="item">
+
+<img src="https://img.sanishtech.com/u/81566e6d0ad30e1218b3318da1c7c00a.png">
+
+<div class="overlay">Animation</div>
+
+</a>
+
+<a href="logo.html" class="item">
+
+<img src="https://img.sanishtech.com/u/afbc20d36685ad6c002b5bd1df575dfc.jpg">
+
+<div class="overlay">Logo</div>
+
+</a>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<h2>Start a Project</h2>
+
+<p>Need poster, animation or logo design?</p>
+
+<a href="https://wa.me/60174769089?text=Hi%20I%20saw%20your%20portfolio">Contact via WhatsApp</a>
+
+</section>
+
+<footer>
+
+© 2026 Kai Shen Portfolio
+
+</footer>
+
+</body>
+</html>
